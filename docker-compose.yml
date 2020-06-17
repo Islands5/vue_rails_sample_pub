@@ -26,11 +26,6 @@ services:
     tty: true
     ports:
       - "${EXTERNAL_POSTGRES_PORT:-5432}:5432"
-  # TODO: ローカルの SQS を elasticmq へ
-  # sqs:
-  #   image: softwaremill/elasticmq
-  #   ports:
-  #     - "${EXTERNAL_SQS_PORT:-9324}:9324"
 
 volumes:
   postgres_data:
